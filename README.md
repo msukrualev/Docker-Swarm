@@ -27,7 +27,7 @@
 Imagine that you had to run hundreds of containers. You can easily see that if they are running in a distributed mode, there are multiple features that you will need from a management angle to make sure that the cluster is up and running, is healthy and
 more.
 
-Some of these necessary features include: NEDEN ORCHESTRATION'A IHTIYACIMIZ VAR?
+Some of these necessary features include:
 
 ● Health Checks on the Containers <br>
 ● Launching a fixed set of Containers for a particular Docker image<br>
