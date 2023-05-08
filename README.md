@@ -1,25 +1,17 @@
-# Docker-Swarm-Pojects
+# Docker-Swarm-Pojects Intro
 
 # What is Docker Swarm?
-
-<p align="center">
-  <img src="images/Dockerswarm.png" />
-</p>
 
 ## Orchestration
 - The `portability and reproducibility` of a containerized process means we have an opportunity to `move and scale` our containerized applications across clouds and data centers. 
 - Furthermore, as we scale our applications up, we’ll want some tooling to help automate the maintenance of those applications, able to replace failed containers automatically and manage the rollout of updates and reconfigurations of those containers during their lifecycle.
 - Containers are great, but when you get lots of them running, at some point, you need them all working together in harmony to solve business problems.
 
-![My image](images/orchestration2.png)
-
 
 - Docker Swarm is a container orchestration tool built and managed by Docker, Inc. 
 - It is the native clustering tool for Docker. 
 - Swarm uses the standard Docker API, i.e., containers can be launched using normal docker run commands and Swarm will take care of selecting an appropriate host to run the container on. 
 - The tools that use the Docker API can use Swarm without any changes and take advantage of running on a cluster rather than a single host.
-
-![My image](images/swarm-orchestration.png)
 
 
 # But why do we need Container orchestration System?
