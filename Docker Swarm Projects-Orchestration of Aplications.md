@@ -1,15 +1,9 @@
 # What is Docker Swarm?
 
-<p align="center">
-  <img src="images/Dockerswarm.png" />
-</p>
-
 ## Orchestration
 - The `portability and reproducibility` of a containerized process means we have an opportunity to `move and scale` our containerized applications across clouds and data centers. 
 - Furthermore, as we scale our applications up, we’ll want some tooling to help automate the maintenance of those applications, able to replace failed containers automatically and manage the rollout of updates and reconfigurations of those containers during their lifecycle.
 - Containers are great, but when you get lots of them running, at some point, you need them all working together in harmony to solve business problems.
-
-![My image](images/orchestration2.png)
 
 
 - Docker Swarm is a container orchestration tool built and managed by Docker, Inc. 
@@ -17,7 +11,6 @@
 - Swarm uses the standard Docker API, i.e., containers can be launched using normal docker run commands and Swarm will take care of selecting an appropriate host to run the container on. 
 - The tools that use the Docker API can use Swarm without any changes and take advantage of running on a cluster rather than a single host.
 
-![My image](images/swarm-orchestration.png)
 
 
 # But why do we need Container orchestration System?
@@ -531,9 +524,7 @@ ypo62srazazc   webserver.3   gluobe/container-info:green   manager-2   Running  
 - Check the URLs of nodes that is not running the task with `http://<ec2-public-hostname-of-node>` in the browser and show that the app is not accessible.
 
 - Add following rules to security group of the nodes to enable the ingress network in the swarm and explain `swarm routing mesh`. *All nodes participate in an `ingress routing mesh`. The `routing mesh` enables each node in the `swarm` to accept connections on published ports for any service running in the swarm, **even if there’s no task running on the node**. The routing mesh routes all incoming requests to published ports on available nodes to an active container.* [Using swarm mode routing mesh](https://docs.docker.com/engine/swarm/ingress/#bypass-the-routing-mesh)
-
-![My image](images/RM.png)
-
+- 
 * Asagidaki protocolleri `Security/Security Groups/Edit Inbound Rules` ile ekle.
   - For container network discovery -> Protocol: TCP,  Port: 7946, Source: Custom(0.0.0.0/0)
 
@@ -597,7 +588,7 @@ cd /run/secrets
 ls
 cat username
 cat userpassword
-# Gordugunuz gibi gizli degerlere erisim sagladik. cikmak icin crtl d ye bas
+
 ```
 
 - Girdigimiz degerleri guncellemek istiyoruz; napcaz; create another secret using `standard input` and remove the old one.(We can't update the secrets.)
