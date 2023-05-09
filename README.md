@@ -1,4 +1,4 @@
-# Docker-Swarm-Pojects Intro
+# Docker-Swarm-Projects Intro
 
 # What is Docker Swarm?
 
